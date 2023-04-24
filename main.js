@@ -67,10 +67,8 @@ let getWeatherData = async () => {
 getWeatherData()
 
 btn.addEventListener("click", getWeatherData)
-
 window.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-        
         getWeatherData()
         if (inputBox.value != "") {
             inputBox.value = "";
